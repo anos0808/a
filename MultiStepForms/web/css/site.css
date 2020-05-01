@@ -1,0 +1,346 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    margin-left: -94px;bottom:3px;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;  
+}
+
+input {
+    padding: 10px;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;background-color: #2f2a2a;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4CAF50;
+}
+td,th{text-align: center;height:50px;}
+
+.footer-btn{
+    float:right;position: fixed;top:95%;width: 100%;
+}
+tr, td {
+    border: 1px solid #2b2626;
+}
+
+@media all and (min-width:768px){
+
+    .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+        position: absolute;
+        margin-left: 0px;bottom:3px;
+    }
+
+}
+
+@media all and (max-width:767px){
+    table{
+        width:100%;
+    }
+    td{
+        width:100%;
+        display:block;
+        text-align: center;
+    }
+    tr{
+        /*    display:block;*/
+        margin-bottom:30px;;
+    }
+    .checkbox {
+        position: relative;
+        display: block;
+        margin-top: 34px;
+        margin-bottom: 10px;
+        margin-left: 164px;top: 3px;
+    }
+
+    .footer-btn{
+        position: inherit;
+        float:left;
+    }
+
+    #tr-header{
+        display: none
+    }
+
+    tr {
+        border: 1px solid #ccc; 
+    }
+
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc; 
+    }
+
+    td { 
+        /* Behave  like a "row" */
+        /*    border: none;*/
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    td:before { 
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px;
+        white-space: nowrap;margin-top: 5px;
+    }
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before { content: "Name"; }
+
+    td:nth-of-type(2):before { content: "Auswählen"; }  
+    td:nth-of-type(3):before { content: "Menge"; }  
+    table tr:last-of-type td:nth-of-type(3)::before {content: "Summe";}
+    #connectionTable tr:last-of-type td:nth-of-type(3)::before {content: "'Auswählen";}
+    #resultTable tr td:nth-of-type(3)::before {content: "Turnus";}
+    #resultTable tr td:nth-of-type(2)::before {content: "Preis";} 
+    #resultTable tr td:nth-of-type(4)::before {content: "Summe";} 
+    #featerusTable tr:last-of-type td:nth-of-type(4)::before {content: "Auswählen";}
+    tr:nth-child(even) {background: #CCC}
+    tr:nth-child(odd) {background: #FFF}
+    #tr-header,#totalSum{display: none}
+    td p {
+        margin-top: 10px;
+    }
+    #extra{display: none}
+  #nextBtn {
+        position: absolute;
+        right: 19px;
+    }
+
+}
+
+.form-group {
+    margin-bottom: -9px;margin-top: 6px;
+}
+
+table
+{
+    width:100%
+}
+
+#w0,.footer,#contactform-warenwirtschaft,#contactform-amazon,
+#contactform-farfetch,#contactform-onlineshop,
+#contactform-dhl,#contactform-dbd,#contactform-blackpost,
+#tr-blackpost ,#tr-Warenwirtschaft,#tr-amazon,#tr-farfetch,#tr-onlineshop,#tr-dhl,#tr-dbd,#tr-datenanreicherung,#tr-amazonproduktupload
+{
+    display: none;width:60px;
+}
+
+span{
+    color: #1e2a64;
+}
+
+.td-header{
+    text-align: center; background-color:#e0f0cb;
+}
+
+.tab{
+    position: relative;
+}
+
+#totalSum,#sum{
+
+    font-size: x-large;
+}
+#contactform-checkactive{
+    position: absolute;
+    margin-left: -294px;
+}
+
+#info{text-align: left;margin-top: 32px;
+      border: 1px solid #2b2626;
+}
+
+#divcheckactive{
+    text-align: left
+}
+
+#info-string{
+    height: 50px;
+}
